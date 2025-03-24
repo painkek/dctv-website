@@ -1,0 +1,84 @@
+/* About.css */
+.about {
+      width: 100%;
+      padding: 80px 100px;
+      background-color: #f9f9f9;
+      text-align: center;
+    }
+    
+    .services {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      margin-bottom: 40px;
+    }
+    
+    .service-item {
+      display: flex;
+      align-items: flex-start; /* Align items to the top */
+      max-width: 400px; /* Increased max-width */
+      text-align: left; /* Align text to the left */
+    }
+    
+    .service-logo {
+      max-width: 150px; /* Adjusted logo size */
+      height: auto;
+      margin-right: 20px; /* Add margin to separate logo and text */
+    }
+    
+    .service-text {
+      flex: 1; /* Allow text to take remaining space */
+    }
+    
+    .service-text h3 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+      color: #333;
+    }
+    
+    .service-text p {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #555;
+    }
+    
+    .upgrade-btn {
+      background-color: #007bff;
+      color: white;
+      padding: 15px 30px;
+      font-size: 1.2rem;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    
+    .upgrade-btn:hover {
+      background-color: #0056b3;
+    }
+    
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .about {
+        padding: 60px 30px;
+      }
+    
+      .services {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+      }
+    
+      .service-item {
+        max-width: 100%;
+        align-items: center; /* Center items on smaller screens */
+        text-align: center; /* Center text on smaller screens */
+        flex-direction: column; /* Stack logo and text */
+      }
+    
+      .service-logo {
+        max-width: 80%;
+        margin-right: 0; /* Remove right margin */
+        margin-bottom: 20px; /* Add bottom margin */
+      }
+    }

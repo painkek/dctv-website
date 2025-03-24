@@ -1,0 +1,94 @@
+.hero {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(rgba(242, 242, 255, 0.7), rgba(0, 0, 0, 0.7)), url('../../assets/logo/CoverPhoto_Blank-max.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 150px; /* Add padding for spacing */
+  
+}
+/* Contact Info Styling */
+.contact-info {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align text to the left */
+  gap: 15px; /* Space between items */
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between icon and text */
+}
+
+.contact-item a {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contact-icon {
+  width: 24px; /* Adjust size */
+  height: 24px;
+}
+
+/* Hero Text Styling */
+.hero-text {
+  color: #FFF;
+  max-width: 300px;
+  text-align: center;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  padding-top: 0;
+  margin: 0; 
+}
+
+.hero-text p {
+  font-size: 1rem;
+  font-weight: 300;
+  padding-bottom: 20px;
+  margin: 0;
+}
+
+.hero-btn {
+  background: #2b6cc1;
+  color: white;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 30px;
+  cursor: pointer;
+  border: 0;
+  outline: 0;
+}
+
+.hero-btn:hover {
+  background: #121724;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column-reverse; /* Swap for mobile view */
+    align-items: center;
+    text-align: center;
+  }
+
+  .contact-info {
+    align-items: center;
+    margin-top: 20px; /* Adjust spacing */
+  }
+
+  .contact-item {
+    justify-content: center;
+  }
+}

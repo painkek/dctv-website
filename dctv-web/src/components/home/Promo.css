@@ -1,0 +1,83 @@
+.promo-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  padding: 180px;
+  flex-wrap: wrap; 
+  text-align: left;
+}
+    .promo-banner {
+      width: 35%;
+    }
+    
+    .promo-banner img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    }
+    
+    .promo-content {
+      width: 50%;
+      padding-left: 40px;
+    }
+    
+    .promo-content h2 {
+      font-size: 32px;
+      font-weight: bold;
+      color:#145ab6;
+    }
+    
+    .promo-content p {
+      color: #666;
+      margin-top: 10px;
+      line-height: 1.6;
+    }
+    
+    .apply-btn {
+      margin-top: 20px;
+      padding: 12px 24px;
+      background-color: #007bff;
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    
+    .apply-btn:hover {
+      background-color: #0056b3;
+    }
+    
+    /* Make Responsive */
+@media (max-width: 768px) {
+  .promo-section {
+    flex-direction: column; /* Stack elements vertically */
+    padding: 50px 20px; /* Adjust padding for mobile */
+  }
+
+  .promo-banner {
+    width: 80%; /* Make the image larger */
+    margin-bottom: 20px; /* Add spacing */
+  }
+
+  .promo-content {
+    width: 100%; /* Make text full width */
+    padding-left: 0;
+  }
+
+  .promo-content h2 {
+    font-size: 28px; /* Adjust font size */
+  }
+
+  .promo-content p {
+    font-size: 16px;
+  }
+
+  .apply-btn {
+    width: 100%; /* Full width button */
+  }
+}
+    

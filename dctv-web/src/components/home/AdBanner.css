@@ -1,0 +1,61 @@
+    /* AdBanner.css */
+.ad-banner-container {
+      background-color: #eaf3ff; /* Customize background color:  */
+      padding: 20px; /* Add padding as needed */
+      position: relative; /* Make container relative for absolute positioning */
+    }
+
+    .ad-banner {
+      margin: 20px auto;
+    }
+    
+    .ad-banner img {
+      width: 100%;
+      height: 480px;
+      object-fit: contain;
+      border-radius: 29px;
+    }
+
+.slick-prev,
+.slick-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  cursor: pointer;
+  transition: transform 0.3s ease; /* Add transition */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Add box shadow */
+}
+
+/** Hide default arrows **/
+.slick-prev::before,
+.slick-next::before {
+  content: none;
+}
+
+.slick-prev::after,
+.slick-next::after {
+  content: none;
+}
+
+.slick-prev {
+  left: 20px;
+}
+
+.slick-next {
+  right: 20px;
+}
+
+.slick-prev:hover,
+.slick-next:hover {
+  transform: translateY(-50%) scale(1.1); /* Add hover effect */
+}
+/* Optional: Adjust dot styles */
+.slick-dots li button:before {
+  font-size: 48px;
+  color: black;
+}
+
+.slick-dots li.slick-active button:before {
+  color: blue;
+}

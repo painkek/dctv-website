@@ -1,0 +1,65 @@
+.footer {
+  background-color: #082230;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  width: 100%; /* Ensure the footer fills the width */
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  gap: 180px; /* Large gap for bigger screens */
+  padding: 20px 0;
+  flex-wrap: wrap; /* Ensures responsiveness */
+}
+
+.footer-section {
+  text-align: left;
+  max-width: 300px; /* Prevents excessive stretching */
+}
+
+/* Style adjustments for text */
+.footer-section h3 {
+  border-bottom: 2px solid white;
+  padding-bottom: 6px;
+}
+
+.footer-section p {
+  margin: 10px 0;
+  font-size: 14px;
+  color: #b3b3b3;
+}
+
+hr {
+  border: 0.5px solid white;
+  width: 80%;
+  margin: 20px auto;
+}
+
+.footer-bottom {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+/* ====== Responsive Design ====== */
+
+/* For Tablets and Medium Screens */
+@media (max-width: 900px) {
+  .footer-content {
+    gap: 100px; /* Reduce spacing */
+  }
+}
+
+/* For Small Screens and Mobile */
+@media (max-width: 600px) {
+  .footer-content {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center align content */
+    gap: 30px;
+  }
+
+  .footer-section {
+    text-align: center; /* Center text on small screens */
+  }
+}

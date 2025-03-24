@@ -1,0 +1,113 @@
+/* Main Container */
+.plans-container {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+/* Header */
+.plans-header h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.plans-header p {
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Toggle Buttons */
+.plan-toggle {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.plan-toggle button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  background-color: #e0e0e0;
+}
+
+.plan-toggle button.active {
+  background-color: #145ab6;
+  color: white;
+}
+
+/* Plan Cards */
+.plans-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.plan-card {
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  width: 240px; /* Increase the width */
+  height: 300px; /* Set a fixed height or adjust as needed */
+  text-align: center;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Ensures spacing between content */
+}
+
+.plan-card:hover {
+  transform: translateY(-5px);
+}
+
+
+.plan-card h2 {
+  font-size: 22px;
+  color: #145ab6;
+}
+
+.plan-card h3 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+.plan-card p {
+  font-size: 14px;
+  color: #666;
+  margin: 10px 0;
+}
+
+/* Apply Now Button */
+.apply-btn {
+  display: inline-block;
+  background-color: #145ab6;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.3s ease;
+}
+
+.apply-btn:hover {
+  background-color: #0d3c91;
+}
+
+/* Mobile Optimization */
+@media (max-width: 768px) {
+  .plans-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .plan-card {
+    width: 90%;
+    max-width: 240px;
+  }
+}

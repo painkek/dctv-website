@@ -1,0 +1,30 @@
+.branch-preview1 {
+      text-align: center;
+      padding: 130px 20px;
+      background: #f4f4f4;
+    }
+    
+    .branch-preview1 h2 {
+      color: #0073e6;
+      margin-bottom: 15px;
+    }
+    
+    .map-container1 {
+      margin: 20px auto;
+      width: 100%;
+      max-width: 1000px;
+      height: 480px;
+    }
+    
+    .map-container1 iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+      border-radius: 8px;
+    }
+
+    .btn-branches:hover{
+      background-color: #0056b3;
+    }
+  
+    

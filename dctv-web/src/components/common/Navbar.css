@@ -1,0 +1,153 @@
+nav {
+  width: 100%;
+  background: #082230;
+  /* background: rgba(8, 29, 39, 0.7); */
+  /* backdrop-filter: blur(10px); */
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
+  z-index: 1000;
+  padding: 10px 20px;
+}
+
+.hidden {
+  transform: translateY(-100%);
+}
+
+/* Logo */
+.logo {
+  width: 10%;
+  display: flex;
+}
+
+/* Nav Links */
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 5px 15px;
+  font-size: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effect with Underline */
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+nav ul li a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background: #004aad;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: width 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+  color: #004aad;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+/* Button */
+.btn {
+  background-color: #004aad;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 5px rgba(0, 74, 173, 0.5);
+}
+
+.btn:hover {
+  background-color: #0d3c91;
+  box-shadow: 0 0 15px rgba(0, 74, 173, 0.8);
+}
+
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+  cursor: pointer;
+  margin-right: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.hamburger-icon rect {
+  transition: all 0.3s ease;
+}
+
+/* Animated Hamburger Menu */
+.hamburger-icon.open rect:nth-child(1) {
+  transform: translateY(20px) rotate(45deg);
+}
+
+.hamburger-icon.open rect:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-icon.open rect:nth-child(3) {
+  transform: translateY(-20px) rotate(-45deg);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background: rgba(8, 29, 39, 0.9);
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    display: none;
+    padding: 15px 0;
+    border-radius: 5px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .nav-links.active {
+    display: flex;
+    animation: fadeIn 0.3s ease-in-out;
+  }
+
+  .nav-links li {
+    margin: 15px 0;
+  }
+}
+
+/* Smooth Fade-in Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
